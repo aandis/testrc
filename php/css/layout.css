@@ -1,0 +1,195 @@
+#header
+{
+	background-color:#333333;
+}
+.rc 
+{
+	color: rgb(255, 255, 255);
+	font-size: 3.5em;
+	//text-align: center;
+	font-family: 'Source Sans Pro',sans-serif;
+	text-align:center;
+	transition:1s;
+}
+.rc:hover
+{
+	text-shadow: 0px 0px 25px #6FC06A;
+}
+.nav
+{
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	//outline: 0px none;
+	color: rgb(255, 255, 255);
+	margin:auto;
+	text-align:center;
+	//word-wrap:break-word;
+	min-width:100%
+}
+.n
+{
+	margin:auto;
+	margin-top:2.5em;
+	position:relative;
+	margin-bottom:4em;
+}
+#dh
+{
+	background-color:#6FC06A;
+	position:absolute;
+	top:-14.5px;
+	right:-2.9px;
+	border-radius:0.6em;
+	padding-top:15px;
+    padding-bottom:15px;
+    padding-left:25px;
+    padding-right:25px;
+    opacity:0;
+    transition:1s;
+}
+#dh:hover
+{
+	opacity:1;
+}
+
+#mid
+{
+	background-color:#8DCB89;
+}
+
+.ready
+{
+	text-align:center;
+	font-family: 'Source Sans Pro',sans-serif;
+	color:white;
+	font-weight:bold;
+	margin-top:1.5em;
+}
+
+.regt
+{
+	color: rgb(51, 51, 51);
+	text-align:center;
+	font-family: 'Source Sans Pro',sans-serif;
+	letter-spacing: 0.15em;
+	font-size: 1.1em;
+}
+
+.log
+{
+	text-align: center;
+	font-size: 2em;
+	color: rgb(64, 64, 64);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 1em;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+.mail
+{
+	border-radius:0.6em;
+	height:5em;
+	box-shadow: 0px 0.1em 10em 0px #E2F2E1 inset;
+	transition:0.5s;
+}
+
+.mail:link
+{
+	box-shadow: 0px 0em 0em 0px #FFFFFF;
+}
+#subdiv
+{
+	text-align:center;
+	margin:30px 0px 35px 0px;
+}
+.submitbutton:hover
+{
+	background-color:#3F8A3A;
+}
+.submitbutton {
+    cursor: pointer;
+    border: 0px none;
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: rgb(51, 51, 51);
+    border-radius: 8px 8px 8px 8px;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    transition: all 1s ease 0s;
+}
+
+.forgot
+{
+		color: rgb(51, 51, 51);
+	    font-family: 'Source Sans Pro',sans-serif;
+	    text-decoration:underline;
+}
+
+#pass
+{
+		text-align:center;
+		margin-bottom:35px;
+}
+
+.forgot:hover
+{
+	text-decoration:none;
+	color: rgb(51, 51, 51);
+}
+
+#footer
+{
+	background-color:#333333;
+}
+
+.tweet
+{
+	color:#E2F2E1;
+	transition:1s;
+}
+.tweet:hover
+{
+	text-shadow: 0px 0px 25px #6FC06A;
+	color:white;
+	font-size:1.01em;
+}
+
+.cen
+{
+	//text-align:center;
+}
+
+#ll
+{
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: rgba(255, 255, 255, 0.3);
+	padding-bottom:2.5em;
+	padding-top:1.5em;
+}
+.IIT
+{
+	font-size:0.9em;
+	font:bold;
+	color:#F3F3F3;
+	text-align:center;
+}
+.IIT:hover
+{
+	text-shadow:0px 0px 10px white;
+}
+
+a:hover,a:visited,a:active,a.logo:link
+{
+	text-decoration:none;
+}

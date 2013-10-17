@@ -1,80 +1,253 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="layout.css"/>
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
-		<link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
-	</head>
-<body>
-	<script src="js/bootstrap.js"></script>	
-	<div class="up">
-		<ul class="nav">
-			<li><div class="hg"><p class="top">HOMEPAGE</p></div></li>
-			<li><div class="work"><p class="top">HOW IT WORKS</p></div><p class="top">HOW IT WORKS</p></li>
-			<li><div class="work"><p class="top">LOGIN</p></div><p class="top">LOGIN</p></li>
-			<li><div class="work"><p class="top"><a href="#flist">CONTACT US</a></p></div><p class="top">CONTACT US</p></li>
-		</ul>
-		
-		<div class="logo">
-			<a href="#"><h1 class="rc"><i class=" icon-bolt" id="one"></i>XCREARBHD</h1></a>
-		</div>
-		<h6 class="blo">asdahskd 
-			<a href="#"><h6 class="free">asdhaskdjolwj</h6></a>
-		</h6>
-		
-		<a href="#">
-			<div class="circle" id="first">
-				<div><i class="icon-bolt" id="bolt"></i></div>
-			</div>
-		</a>
-		<a href="#"><div class="circle">
-			<div><i class="icon-mobile-phone"></i></div>
-			</div>
-		</a>
-		<a href="#"><div class="circle">
-			<div><i class="icon-gift"></i></div>
-			</div>
-		</a>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/layout.css" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/skylo.css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	      <script src="js/bootstrap.min.js"></script>
+    <script src="js/skylo.js"></script>
+	  <script>
 
-		<div id="Ist"><p class="top">SKDHKHWasdjl<br>CBAKSHANSL ASKA ASHK</p></div>
-		<div id="IInd"><p class="top">asdas asmdhkahsd<br>asdk ahdkas</p></div>
-		<div id="IIIrd"><p class="top">qwiey kpew<br>asbdkasd asdhkasd</p></div>
-		
-		<p class="catch">asd asjdo. askdha ajdlasj</p>
-		
-		<div class="box"><p class="t">asd gh ghwee ucshkfie</p></div>
-		
-		<h6 id="lst">*asdhasdka sd,jasdj</h6>
-	</div>
-	
-	<div class="mid">
-		<h1 class="rc" id="ready">asdljasdlajsdl asjd l</h1>
-		<p class="we">asdk ashdsa hk</p>
-	</div>
-	
-	<div class="bmid">
-		<p class="rc" id="much"><strong>asd a,dsua ausdj</strong></p>
-		<p id="sdh">asd aksudoas aslud</p>
-		
-		<div id="sliderbox">
-			<input id="slider" type="range" value="2013" max="25000" min="0"></input>
+
+
+
+            $(function(){
+                $('#demo').on('click',function(){
+                    $(document).skylo('start');
+
+                    setTimeout(function(){
+                        $(document).skylo('set',50);
+                    },1000);
+
+                    setTimeout(function(){
+                        $(document).skylo('end');
+                    },1500);
+                });
+
+                $('#start').on('click',function(){
+                    $(document).skylo('start');
+                });
+
+                $('#end').on('click',function(){
+                    $(document).skylo('end');
+                });
+
+                $('#set').on('click',function(){
+                    $(document).skylo('show',function(){
+                        $(document).skylo('set',50);
+                    });
+                });
+
+                $('#get').on('click',function(){
+                    alert($(document).skylo('get')+'%');
+                });
+
+                $('#inch').on('click',function(){
+                    $(document).skylo('show',function(){
+                        $(document).skylo('inch',10);
+                    });
+                });
+
+
+            })
+        
+
+</script>
+	  
+	  
+	  
+	  
+	  
+	  
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header">
+		<div class="row">
+			<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" id="mov">
+				<a href="http://www.rechargery.com" class="logo"><h1 class="rc"><i class="icon-bolt"></i><strong>RECHARGERY</strong></h1></a>
+			</div>
+			<div class="col-lg-5 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+				<div class="row">
+				
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 n">
+						<a href="/dashboard" class="logo">
+							<p class="nav">DASHBOARD</p>
+						<p class="nav" id="dh">DASHBOARD</p></a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 n">
+						<a href="/profile" class="logo">
+							<p class="nav">PROFILE</p></a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 n">
+						<a href="/orders" class="logo">
+							<p class="nav">ORDERS</p></a>						
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 n">
+						<a href="/start" class="logo"><p class="nav">LOGIN</p></a>
+					</div>
+				
+				</div>
+			</div>
 		</div>
-		<div class="box" id="try"><p class="t">HYE LI BOW</p></div>
-	</div>
-	<div class="pref">
-		<div id="pf">
-		<h1 class="rc" id="ready">akskdhkasd jasdl jasd </h1>
-		<p class="we">asdj alsdj  l</p>
+    </div>
+    
+    <div class="col-lg-12" id="mid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2 class="ready">
+					Are you ready for your free recharge?
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<p class="regt">REGISTER/LOGIN BELOW</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<p class="log">
+					LOGIN
+				</p>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="text" class="form-control mail text" id="email" placeholder="Email" name="email">  
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="form-group">
+						
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="password" class="form-control mail text" id="password" placeholder="Password" name="password"> 
+									</div>
+								</div>
+							</div>
+					</div>
+				</form>
+				<div class="row">
+					<div class="col-lg-12" id="subdiv">
+						<input class="submitbutton" type="submit" value="Log In" name="commit">
+					</div>
+				</div>
+				<div class="row" id="pass">
+					<div class="col-lg-12">
+						<a class="forgot" href="/profile/forgotpassword">
+
+							Forgot Password
+
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+				<p class="log">
+					REGISTER
+				</p>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="text" class="form-control mail text" id="name" placeholder="Name" name="name">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="text" class="form-control mail text" id="email" placeholder="Email" name="email"> 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="password" class="form-control mail text" id="password" placeholder="Password" name="password">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="password" class="form-control mail text" id="password_confirmation" placeholder="Retype Password">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+												<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<div class="row">
+									<div class="col-lg-10">
+										<input type="text" class="form-control mail text" id="phone" placeholder="Phone Number" name="phone"> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-lg-12" id="subdiv">
+							<input class="submitbutton" type="submit" value="Register" name="commit">
+						</div>
+					</div>
+			</div>
+		</div>
+    </div>
+    
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer">
+			<div class="row">
+				<div class="col-lg-offset-4 col-lg-1 col-md-offset-4 col-md-1 col-sm-offset-4 col-sm-1 col-xs-4 cen">
+					<a href="http://www.twitter.com/rechargery"><h2><i class=" icon-twitter tweet"></i></h2></a>
+				</div>
+				<div class="col-lg-offset-1 col-lg-1 col-md-offset-1 col-md-1 col-sm-offset-1 col-sm-1 col-xs-4 cen">
+					<a href="http://www.facebook.com/rechargery" target="_blank"><h2><i class=" icon-facebook tweet"></i></h2></a>
+				</div>
+				
+				<div class="col-lg-offset-1 col-lg-1 col-md-offset-1 col-md-1 col-sm-offset-1 col-sm-1 col-xs-4 cen">
+					<a href="mailto:hello@rechargery.com" target="_blank"><h2><i class=" icon-envelope tweet"></i></h2></a>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<p id="ll">Copyright (c) 2013 <a href="http://www.rechargery.com" class="logo"><span class="IIT">Rechargery.com.</span></a> All rights reserved. | Shop Online, get free recharges. | Crafted at <a href="http://www.iitrpr.ac.in" class="logo"><span class="IIT">IIT Ropar</span></a></p>
+			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<ul id="flist">
-			<li><i class="icon-twitter" id="tweet"></i></li>
-			<li><i class="icon-facebook" id="tweet"></i></li>
-			<li><i class=" icon-envelope" id="tweet"></i></li>
-		</ul>
-		
-		<p id="ll">asdh asdjl ajsd <span class="IIT">asljdl alsd jla</span> as dasd a | asdasd  | asd a kfla <span class="IIT">asdj asldk l</span></p>
-	</div>
-</body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/skylo.js"></script>
+  </body>
 </html>
+
+
